@@ -1,1 +1,215 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsachi Blau - Machine Learning Researcher</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".navbar a");
+
+    // Initialize by selecting the first section
+    if (navLinks.length > 0) {
+        navLinks[0].classList.add("active");
+    }
+
+    window.addEventListener("scroll", () => {
+        let current = "";
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (window.scrollY >= sectionTop - sectionHeight / 4) {
+                current = section.getAttribute("id");
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href").substring(1) === current) {
+                link.classList.add("active");
+            }
+        });
+    });
+});
+</script>
+
+
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <nav>
+            <a href="#about">about</a>
+            <a href="#publications">publications</a>
+        </nav>
+    </header>
+
+    <!-- Introduction Section -->
+    <section id="about" class="about">
+        <div class="intro-section">
+            <div class="content-container">
+                <img src="./images/me.png" alt="Tsachi Blau" class="profile-img">
+                <div class="intro-text">
+                    <div>
+                        <h1 class="name-text">Tsachi Blau</h1>
+                        <p class="about-general"><strong>Machine Learning and AI Researcher,</strong></p>
+                        <p class="about-general"><strong>PhD Candidate in Computer Science,</strong></p>
+                        <p class="about-general">
+                            <a href="https://www.technion.ac.il/en/home-2/" target="_blank" class="link-no-underline">
+                                Technion – Israel Institute of Technology
+                            </a>
+                        </p>
+                    </div>
+                    <div class="social-links">
+                        <a href="mailto:tsachiblau@gmail.com">
+                            <img src="./images/mail.png" alt="Mail" class="social-icon">
+                        </a>
+                        <a href="https://scholar.google.com/citations?user=T7wAG8cAAAAJ&hl=en" target="_blank">
+                            <img src="./images/scholar.png" alt="Google Scholar" class="social-icon">
+                        </a>
+                        <a href="https://github.com/tsachiblau" target="_blank">
+                            <img src="./images/github.png" alt="GitHub" class="social-icon">
+                        </a>
+                        <a href="https://www.linkedin.com/in/tsachiblau/?originalSubdomain=il" target="_blank">
+                            <img src="./images/linkedin.png" alt="LinkedIn" class="social-icon">
+                        </a>
+                        <a href="https://x.com/TsachiBlau" target="_blank">
+                            <img src="./images/twitter.png" alt="Twitter" class="social-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- About Section -->
+        <div class="about-content-section">
+            <div class="content-container">
+                <p>
+                    I am a Ph.D. candidate in the Computer Science Department at the
+                    <a href="https://www.technion.ac.il/en/home-2/" target="_blank" class="link-no-underline">Technion – Israel Institute of Technology</a>,
+                    advised by professors
+                    <a href="https://bron.cs.technion.ac.il/" target="_blank" class="link-no-underline">Alex M. Bronstein</a> and <a href="https://cris.bgu.ac.il/en/persons/chaim-baskin" target="_blank" class="link-no-underline">Chaim Baskin</a>.
+                    My research primarily focuses on adversarial attacks, robustification techniques, and generative models.
+                    I explore adversarial defense strategies using generative approaches and investigate how adversarial methodologies can enhance robustness across various applications, including natural language processing (NLP).
+                    My goal is to deepen the understanding of adversarial phenomena and contribute to advancements in machine learning and artificial intelligence.
+                </p>
+<!--                <p><u><strong>Research</strong></u><br> My research focuses on advancing machine learning techniques with a special emphasis on robustness, interpretability, and efficiency in real-world scenarios. I have contributed to developing methods for adversarial defense, such as using diffusion models to build threat model-agnostic systems. Additionally, my work explores test-time transformations to enhance classifier robustness, addressing the growing need for reliable models under distribution shifts. Another key area of my research involves vision-language tasks, exemplified by my work on GRAM, which introduces global reasoning capabilities for multi-page visual question answering (VQA). I am also actively exploring new paradigms in contextual learning, such as the Context-Aware Prompt Tuning method, which combines in-context learning and adversarial strategies to improve few-shot performance</p>-->
+            </div>
+            <div class="content-container">
+                <p>
+                    Prior to my Ph.D. studies I completed my Master’s degree in Electrical and Computer Engineering at the
+                    <a href="https://www.technion.ac.il/en/home-2/" target="_blank" class="link-no-underline">Technion</a>,
+                    advised by professors
+                    <a href="https://elad.cs.technion.ac.il/" target="_blank" class="link-no-underline">Michael Elad</a>, <a href="https://bron.cs.technion.ac.il/" target="_blank" class="link-no-underline">Alex M. Bronstein</a> and <a href="https://cris.bgu.ac.il/en/persons/chaim-baskin" target="_blank" class="link-no-underline">Chaim Baskin</a>.
+                    I gained experience in R&D at
+                    <a href="https://www.appliedmaterials.com/il/en.html" target="_blank" class="link-no-underline">Applied Materials</a>,
+                    and later worked as a research intern at
+                    <a href="https://www.amazon.science/research-areas" target="_blank" class="link-no-underline">Amazon</a>.
+                    I also hold a Bachelor’s degree in Electrical and Computer Engineering from the
+                    <a href="https://www.technion.ac.il/en/home-2/" target="_blank" class="link-no-underline">Technion</a>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="content-section">
+        <div class="publications-heading">
+            <h1>Publications</h1>
+        </div>
+
+        <div class="publication">
+            <div class="publication-text">
+                <h3 class="publication-title">Context-aware Prompt Tuning: Advancing In-Context Learning with Adversarial Methods</h3>
+                <p class="publication-authors">
+                    <u><strong>Tsachi Blau</strong></u>, Moshe Kimhi, <a href="https://belinkov.com/" target="_blank" class="link-no-underline">Yonatan Belinkov</a>, <a href="https://bron.cs.technion.ac.il/" target="_blank" class="link-no-underline">Alex M. Bronstein</a>  and <a href="https://cris.bgu.ac.il/en/persons/chaim-baskin" target="_blank" class="link-no-underline">Chaim Baskin</a>
+                </p>
+                <p class="publication-venue">
+                    Preprint, arXiv:2410.17222.
+                </p>
+                <p class="publication-links">
+                    <a href="https://arxiv.org/abs/2410.17222" target="_blank">Paper</a> |
+                    <a href="https://github.com/tsachiblau/CPT" target="_blank">Code</a>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="publication">
+            <div class="publication-text">
+                <h3 class="publication-title">Conceptual Learning via Embedding Approximations for Reinforcing Interpretability and Transparency</h3>
+                <p class="publication-authors">
+                    Maor Dikter, <u><strong>Tsachi Blau</strong></u> and <a href="https://cris.bgu.ac.il/en/persons/chaim-baskin" target="_blank" class="link-no-underline">Chaim Baskin</a>
+                </p>
+                <p class="publication-venue">
+                    <strong>WACV 2025</strong>, in The IEEE/CVF Winter Conference on Applications of Computer Vision.
+                </p>
+                <p class="publication-links">
+                    <a href="https://arxiv.org/abs/2406.08840" target="_blank">Paper</a> |
+                    <a href="https://github.com/clearProject/CLEAR" target="_blank">Code</a>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="publication">
+            <div class="publication-text">
+                <h3 class="publication-title">GRAM: Global Reasoning for Multi-Page VQA</h3>
+                <p class="publication-authors">
+                    <u><strong>Tsachi Blau</strong></u>, Sharon Fogel, Roi Ronen, Alona Golts, <a href="https://royg27.github.io/" target="_blank" class="link-no-underline">Roy Ganz</a>, Elad Ben Avraham, Aviad Aberdam, Shahar Tsiper and Ron Litman
+                </p>
+                <p class="publication-venue">
+                    <strong>CVPR 2024</strong>, in Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition.
+                </p>
+                <p class="publication-links">
+                    <a href="https://openaccess.thecvf.com/content/CVPR2024/html/Blau_GRAM_Global_Reasoning_for_Multi-Page_VQA_CVPR_2024_paper.html" target="_blank">Paper</a>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="publication">
+            <div class="publication-text">
+                <h3 class="publication-title">Class Condition Transformation for Enhanced Robust Image Classification</h3>
+                <p class="publication-authors">
+                    <u><strong>Tsachi Blau</strong></u>, <a href="https://royg27.github.io/" target="_blank" class="link-no-underline">Roy Ganz</a>, <a href="https://cris.bgu.ac.il/en/persons/chaim-baskin" target="_blank" class="link-no-underline">Chaim Baskin</a>, <a href="https://elad.cs.technion.ac.il/" target="_blank" class="link-no-underline">Michael Elad</a> and <a href="https://bron.cs.technion.ac.il/" target="_blank" class="link-no-underline">Alex M. Bronstein</a>
+                </p>
+                <p class="publication-venue">
+                    <strong>ICML 2023</strong>, in the 40th International Conference on Machine Learning Workshow on Adversarial Machine Learning.
+                </p>
+
+                <p class="publication-venue">
+                    <strong>WACV 2025</strong>, in The IEEE/CVF Winter Conference on Applications of Computer Vision.
+                </p>
+                <p class="publication-links">
+                    <a href="https://arxiv.org/abs/2303.15409" target="_blank">Paper</a> |
+                    <a href="https://github.com/tsachiblau/Classifier-Robustness-Enhancement-Via-Test-Time-Transformation" target="_blank">Code</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="publication">
+            <div class="publication-text">
+                <h3 class="publication-title">Threat Model-Agnostic Adversarial Defense Using Diffusion Models</h3>
+                <p class="publication-authors">
+                    <u><strong>Tsachi Blau</strong></u>, <a href="https://royg27.github.io/" target="_blank" class="link-no-underline">Roy Ganz</a>, <a href="https://bahjat-kawar.github.io/" target="_blank" class="link-no-underline">Bahjat Kawar</a>, <a href="https://bron.cs.technion.ac.il/" target="_blank" class="link-no-underline
+">Alex M. Bronstein</a> and <a href="https://elad.cs.technion.ac.il/" target="_blank" class="link-no-underline">Michael Elad</a>
+                </p>
+                <p class="publication-venue">
+                    Preprint, arXiv:2207.08089.
+                </p>
+                <p class="publication-links">
+                    <a href="https://arxiv.org/abs/2207.08089" target="_blank">Paper</a> |
+                    <a href="https://github.com/tsachiblau/Threat-Model-Agnostic-Adversarial-Defense-using-Diffusion-Models" target="_blank">Code</a>
+                </p>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>
+

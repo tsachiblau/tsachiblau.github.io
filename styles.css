@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&family=Cormorant+Garamond:wght@400&family=Bodoni+Moda:wght@400&family=Libre+Baskerville:wght@400&family=Merriweather:wght@400&family=Lora:wght@400&family=EB+Garamond:wght@400&family=Didot:wght@400&family=Crimson+Text:wght@400&family=Spectral:wght@400&display=swap');
-html {
-    scroll-padding-top: 80px; /* Adjust the value to your header's height */
-}
+@import url("desktop.css") screen and (min-width: 1100px);
+@import url("mobile.css") screen and (max-width: 1100px);
 
 
 :root {
     /* Font Sizes */
-    --font-size-nav: 24px;
+    --font-size-nav: 16px;
     --font-size-large-heading: 32px;
-    --font-size-name: 60px;
+    --font-size-name: 45px;
     --font-size-regular: 16px;
-    --font-size-about: 18px;
+    --font-size-about: 16px;
 
     /* Colors */
     --color-background: white;
@@ -20,7 +19,8 @@ html {
     --color-border: #ddd;
 
     /*margin*/
-    --left-margin: 400px;
+    --left-margin: 30vw;
+    --top_margin: 50px;
 
     /*fonts*/
     --text-headings-fonts: 'Merriweather', serif;
@@ -28,40 +28,30 @@ html {
 
 }
 
-/* General Styles */
-body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--color-background);
-    font-size: var(--font-size-regular);
-    font-family: var(--text-body-font);
-    line-height: 1.6;
-    color: var(--color-text);
-}
 
-.link-no-underline{
+.link-no-underline {
     color: var(--color-link);
     text-decoration: none;
 }
+
 
 /* Navigation Bar */
 .navbar {
     font-family: var(--text-headings-fonts);
     position: fixed;
-    top: 0;
+    top: 0px;
     z-index: 1000;
     box-shadow: 0px 4px 2px -2px gray;
     width: 100%;
     background-color: var(--color-background);
     border-bottom: 1px solid var(--color-border);
-    padding: 15px 0;
+    padding: 10px 0px;
     text-align: center;
     font-size: var(--font-size-nav);
 }
 
 .navbar a {
-    margin: 0 15px;
+    margin: 0 50px;
     text-decoration: none;
     color: var(--color-text);
     font-weight: bold;
@@ -70,140 +60,7 @@ body {
 
 .navbar a.active {
     color: var(--color-link-hover); /* Or any color to indicate it's active */
-    border-bottom: 2px solid var(--color-link-hover);
+    border-bottom: 0.1vw solid var(--color-link-hover);
 }
 
-.about-general {
-    font-size: var(--font-size-about);
-}
-
-
-.name-text {
-    font-family: var(--text-headings-fonts);
-    font-size: var(--font-size-name);
-    margin-bottom: 10px;
-}
-
-/* Introduction Section */
-.intro-section {
-    font-family: var(--text-headings-fonts);
-    background-color: var(--color-background);
-    margin-top: 100px;
-    display: flex;
-    align-items: flex-start;
-
-}
-
-
-
-
-.profile-img {
-    width: 400px;
-    height: 400px;
-    margin-top: 20px;
-    margin-left: -50px;
-    object-fit: contain;
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0.0);
-    border-radius: 50%;
-    flex-shrink: 0;
-    margin-right: 20px;
-    overflow: hidden;
-}
-
-/*.profile-img {*/
-/*    width: 400px; !* Ensure width and height are equal *!*/
-/*    height: 400px;*/
-/*    margin-top: 20px;*/
-/*    object-fit: contain; !* Ensures the image fills the circle area *!*/
-/*    border-radius: 50%;*/
-/*    box-shadow: 0 0 0 rgba(0, 0, 0, 0.0);*/
-/*    flex-shrink: 0;*/
-/*    margin-right: 20px;*/
-/*    overflow: hidden; !* Hides any overflow outside the circle *!*/
-/*}*/
-
-
-.content-container {
-    font-family: var(--text-body-font);
-    margin-left: var(--left-margin);
-    display: flex;
-    align-items: flex-start;
-}
-
-
-/* Align Text Next to Image on Left */
-.intro-text {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
-
-
-.social-links {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: flex-start;
-    /*margin-top: 10px;*/
-}
-
-.social-icon {
-    width: 35px;
-    height: 35px;
-    object-fit: cover;
-}
-
-/* About Section */
-.about-content-section {
-    width: 900px; /* Align with the left of the image */
-    width: 80%;
-    margin-top: 0px;
-}
-
-/* Publications Section */
-.publication {
-    width: 900px;
-    display: flex;
-    align-items: flex-start;
-    width: 80%;
-}
-
-.publications-heading {
-    font-family: var(--text-headings-fonts);
-    margin-left: var(--left-margin);
-    font-size: var(--font-size-large-heading);
-    margin-top:  40px;
-    margin-bottom:  -40px;
-}
-
-
-.publication-text {
-    margin-top: 10px;
-    margin-left: var(--left-margin);
-    flex-direction: column;
-}
-
-
-.publication-title {
-    font-weight: bold;
-    margin-bottom: -10px; /* Adjust if necessary for the desired spacing */
-
-}
-
-.publication-authors,
-.publication-venue {
-    font-style: italic;
-    color: #555;
-    margin-bottom: -10px; /* Adjust if necessary for the desired spacing */
-}
-
-.publication-links a {
-    color: var(--color-link);
-    text-decoration: none;
-}
-
-.publication-links a {
-    color: var(--color-link);
-    text-decoration: none;
-}
 

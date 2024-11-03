@@ -1,0 +1,160 @@
+
+html {
+    scroll-padding-top: 50px; /* Adjust the value to your header's height */
+}
+
+
+
+
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background);
+    font-size: var(--font-size-regular);
+    font-family: var(--text-body-font);
+    line-height: 1.6;
+    color: var(--color-text);
+}
+
+
+.about-general {
+    font-size: var(--font-size-about);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.name-text {
+    font-family: var(--text-headings-fonts);
+    font-size: var(--font-size-name);
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+
+/* Introduction Section */
+.intro-section {
+    font-family: var(--text-headings-fonts);
+    background-color: var(--color-background);
+    margin-top: var(--top_margin);
+}
+
+
+.profile-img {
+    width: 400px;
+    height: 400px;
+    margin-top: 10px;
+    /*margin-left: -90px;*/
+    object-fit: contain;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.0);
+    border-radius: 50%;
+    flex-shrink: 0;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.content-container {
+    font-family: var(--text-body-font);
+    text-align: center;
+}
+
+
+.about-me-current {
+    font-family: var(--text-body-font);
+    text-align: center;
+    align-items: center;
+}
+
+
+
+/* Align Text Next to Image on Left */
+.intro-text {
+    margin-top: -100px;
+}
+
+
+.social-links {
+    display: flex;
+    gap: 15px; /* Space between each icon */
+    justify-content: center; /* Center items horizontally within .social-links */
+    align-items: center; /* Align items vertically (if needed) */
+    margin-top: 20px; /* Optional: adds space between text and social links */
+    width: 100%; /* Ensures it takes up the full width of its parent container */
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* About Section */
+.about-content-section {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the containers horizontally */
+    text-align: center; /* Centers the text within each container */
+    padding: 0 100px; /* Optional: Adds padding for a cleaner look */
+}
+
+.content-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the containers horizontally */
+    text-align: center; /* Centers the text within each container */
+    margin:  0 100px;
+}
+
+.publication {
+    display: flex;
+    align-items: flex-start
+}
+
+.publications-heading {
+    font-family: var(--text-headings-fonts);
+    font-size: var(--font-size-large-heading);
+
+    margin-top: 10px;
+    margin-bottom: -50px;
+}
+
+
+.publication-text {
+    margin-top: 50px;
+    flex-direction: column;
+}
+
+
+.publication-title {
+    font-weight: bold;
+    margin-bottom: -0px; /* Adjust if necessary for the desired spacing */
+
+}
+
+.publication-authors,
+.publication-venue {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 0px; /* Adjust if necessary for the desired spacing */
+}
+
+.publication-links a {
+    color: var(--color-link);
+    text-decoration: none;
+}
+
+.publication-links a {
+    color: var(--color-link);
+    text-decoration: none;
+}
+

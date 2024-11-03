@@ -1,0 +1,132 @@
+
+
+
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background);
+    font-size: var(--font-size-regular);
+    font-family: var(--text-body-font);
+    line-height: 1.6;
+    color: var(--color-text);
+}
+
+
+
+.about-general {
+    font-size: var(--font-size-about);
+}
+
+
+.name-text {
+    font-family: var(--text-headings-fonts);
+    font-size: var(--font-size-name);
+    margin-bottom: 30px;
+}
+
+/* Introduction Section */
+.intro-section {
+    font-family: var(--text-headings-fonts);
+    background-color: var(--color-background);
+    margin-top: var(--top_margin);
+}
+
+
+.profile-img {
+    width: 400px;
+    height: 400px;
+    margin-top: 20px;
+    margin-left: -50px;
+    object-fit: contain;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.0);
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.content-container {
+    font-family: var(--text-body-font);
+    margin-left: var(--left-margin);
+    display: flex;
+    align-items: flex-start;
+}
+
+
+/* Align Text Next to Image on Left */
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 20px;
+}
+
+
+.social-links {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+/* About Section */
+.about-content-section {
+    width: 100vw; /* Align with the left of the image */
+    width: 80%;
+    margin-top: 0vw;
+}
+
+/* Publications Section */
+.publication {
+    width: 100vw;
+    display: flex;
+    align-items: flex-start;
+    width: 80%;
+}
+
+.publications-heading {
+    font-family: var(--text-headings-fonts);
+    margin-left: var(--left-margin);
+    font-size: var(--font-size-large-heading);
+    margin-top: 5vw;
+    margin-bottom: -3vw;
+}
+
+
+.publication-text {
+    margin-top: 1vw;
+    margin-left: var(--left-margin);
+    flex-direction: column;
+}
+
+
+.publication-title {
+    font-weight: bold;
+    margin-bottom: -0.6vw; /* Adjust if necessary for the desired spacing */
+
+}
+
+.publication-authors,
+.publication-venue {
+    font-style: italic;
+    color: #555;
+    margin-bottom: -0.3vw; /* Adjust if necessary for the desired spacing */
+}
+
+.publication-links a {
+    color: var(--color-link);
+    text-decoration: none;
+}
+
+.publication-links a {
+    color: var(--color-link);
+    text-decoration: none;
+}

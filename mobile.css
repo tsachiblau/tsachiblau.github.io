@@ -19,7 +19,7 @@ body {
 }
 
 
-.about-general {
+.about-section-text {
     font-size: var(--font-size-about);
     display: flex;
     flex-direction: column;
@@ -37,14 +37,14 @@ body {
 }
 
 /* Introduction Section */
-.intro-section {
+.about-intro-section {
     font-family: var(--text-headings-fonts);
     background-color: var(--color-background);
     margin-top: var(--top_margin);
 }
 
 
-.profile-img {
+.about-profile-img {
     width: 400px;
     height: 400px;
     margin-top: 10px;
@@ -59,9 +59,9 @@ body {
     text-align: center;
 }
 
-.content-container {
+.about-content-container {
     font-family: var(--text-body-font);
-    text-align: center;
+    text-align: left;
 }
 
 
@@ -74,21 +74,21 @@ body {
 
 
 /* Align Text Next to Image on Left */
-.intro-text {
+.about-intro-text {
     margin-top: -100px;
 }
 
 
-.social-links {
+.about-social-links {
     display: flex;
     gap: 15px; /* Space between each icon */
-    justify-content: center; /* Center items horizontally within .social-links */
+    justify-content: center; /* Center items horizontally within .about-social-links */
     align-items: center; /* Align items vertically (if needed) */
     margin-top: 20px; /* Optional: adds space between text and social links */
     width: 100%; /* Ensures it takes up the full width of its parent container */
 }
 
-.social-icon {
+.about-social-icon {
     width: 40px;
     height: 40px;
     object-fit: cover;
@@ -98,29 +98,29 @@ body {
 }
 
 /* About Section */
-.about-content-section {
+.about-main-content {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center; /* Centers the containers horizontally */
-    text-align: center; /* Centers the text within each container */
+    text-align: left; /* Centers the text within each container */
     margin: 0 50px; /* Optional: Adds padding for a cleaner look */
 }
 
-.content-section{
+.publication-items-section{
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers the containers horizontally */
-    text-align: center; /* Centers the text within each container */
+    align-items: left; /* Centers the containers horizontally */
+    text-align: left; /* Centers the text within each container */
     margin:  0 50px;
 }
 
-.publication {
+.publication-item {
     display: flex;
     align-items: flex-start
 }
 
-.publications-heading {
+.publication-items-header {
     font-family: var(--text-headings-fonts);
     font-size: var(--font-size-large-heading);
 
@@ -129,31 +129,31 @@ body {
 }
 
 
-.publication-text {
+.publication-item-text {
     margin-top: 50px;
     flex-direction: column;
 }
 
 
-.publication-title {
+.publication-item-title {
     font-weight: bold;
     margin-bottom: -0px; /* Adjust if necessary for the desired spacing */
 
 }
 
-.publication-authors,
-.publication-venue {
+.publication-item-authors,
+.publication-item-venue {
     font-style: italic;
     color: #555;
     margin-bottom: 0px; /* Adjust if necessary for the desired spacing */
 }
 
-.publication-links a {
+.publication-item-links a {
     color: var(--color-link);
     text-decoration: none;
 }
 
-.publication-links a {
+.publication-item-links a {
     color: var(--color-link);
     text-decoration: none;
 }

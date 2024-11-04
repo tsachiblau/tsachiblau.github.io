@@ -1,4 +1,7 @@
 
+html {
+    scroll-padding-top: 100px; /* Adjust the value to your header's height */
+}
 
 
 
@@ -15,9 +18,12 @@ body {
 
 
 
-.about-general {
-    font-size: var(--font-size-about);
+.about-section-text {
+    display: flex;
+    flex-direction: row;
+    margin-left: var(--left-margin);
 }
+
 
 
 .name-text {
@@ -27,27 +33,30 @@ body {
 }
 
 /* Introduction Section */
-.intro-section {
+.about-intro-section {
     font-family: var(--text-headings-fonts);
     background-color: var(--color-background);
     margin-top: var(--top_margin);
+    gap: 20px;
 }
 
 
-.profile-img {
-    width: 400px;
-    height: 400px;
+
+.about-profile-img {
+    width: 400px; /* Adjust width as needed */
+    height: 400px; /* Adjust height to match */
     margin-top: 20px;
     margin-left: -50px;
     object-fit: contain;
     box-shadow: 0 0 0 rgba(0, 0, 0, 0.0);
     border-radius: 50%;
-    flex-shrink: 0;
+    flex-shrink: 0; /* Prevents the image from shrinking */
     margin-right: 20px;
     overflow: hidden;
+
 }
 
-.content-container {
+.about-content-container {
     font-family: var(--text-body-font);
     margin-left: var(--left-margin);
     display: flex;
@@ -56,7 +65,7 @@ body {
 
 
 /* Align Text Next to Image on Left */
-.intro-text {
+.about-intro-text {
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -64,69 +73,67 @@ body {
 }
 
 
-.social-links {
+.about-social-links {
     display: flex;
     gap: 10px;
     align-items: center;
     justify-content: flex-start;
 }
 
-.social-icon {
+.about-social-icon {
     width: 40px;
     height: 40px;
     object-fit: cover;
 }
 
 /* About Section */
-.about-content-section {
-    width: 100vw; /* Align with the left of the image */
+.about-main-content {
     width: 80%;
-    margin-top: 0vw;
+    margin-top: 0;
 }
 
 /* Publications Section */
-.publication {
-    width: 100vw;
+.publication-item {
     display: flex;
     align-items: flex-start;
     width: 80%;
 }
 
-.publications-heading {
+.publication-items-header {
     font-family: var(--text-headings-fonts);
     margin-left: var(--left-margin);
     font-size: var(--font-size-large-heading);
-    margin-top: 5vw;
-    margin-bottom: -3vw;
+    margin-top: 10px;
+    margin-bottom: -50px;
 }
 
 
-.publication-text {
-    margin-top: 1vw;
+.publication-item-text {
+    margin-top: 50px;
     margin-left: var(--left-margin);
     flex-direction: column;
 }
 
 
-.publication-title {
+.publication-item-title {
     font-weight: bold;
-    margin-bottom: -0.6vw; /* Adjust if necessary for the desired spacing */
+    margin-bottom: -0px; /* Adjust if necessary for the desired spacing */
 
 }
 
-.publication-authors,
-.publication-venue {
+.publication-item-authors,
+.publication-item-venue {
     font-style: italic;
     color: #555;
-    margin-bottom: -0.3vw; /* Adjust if necessary for the desired spacing */
+    margin-bottom: 0px; /* Adjust if necessary for the desired spacing */
 }
 
-.publication-links a {
+.publication-item-links a {
     color: var(--color-link);
     text-decoration: none;
 }
 
-.publication-links a {
+.publication-item-links a {
     color: var(--color-link);
     text-decoration: none;
 }

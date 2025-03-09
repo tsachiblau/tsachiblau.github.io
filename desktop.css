@@ -43,13 +43,13 @@ body {
 
 
 .about-profile-img {
-    width: 400px; /* Adjust width as needed */
-    height: 400px; /* Adjust height to match */
-    margin-top: 20px;
-    margin-left: -50px;
+    width: 250px; /* Adjust width as needed */
+    height: 250px; /* Adjust height to match */
+    margin-top: 70px;
+    margin-left: -30px;
     object-fit: contain;
     box-shadow: 0 0 0 rgba(0, 0, 0, 0.0);
-    border-radius: 50%;
+    /*border-radius: 50%;*/
     flex-shrink: 0; /* Prevents the image from shrinking */
     margin-right: 20px;
     overflow: hidden;
